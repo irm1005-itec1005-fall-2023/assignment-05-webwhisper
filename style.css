@@ -29,6 +29,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--body-default-colour);
   background-color: var(--body-background-colour);
+  background-color: #F2F2F2;
 }
 
 main {
@@ -53,3 +54,121 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+/*nav*/
+
+.navbar {
+  display: flex; /* Enable flexbox */
+  justify-content: left; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: black; /* Background color of the navbar */
+}
+
+.nav-item {
+  margin: 0.5; /* Spacing between nav items */
+  background-color: black; /* Background color of nav item containers */
+  padding: 10px; /* Padding inside nav item containers */
+  width: 10rem;
+  height: 3rem;
+
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Text color for links */
+  
+}
+
+.nav-item:hover {
+  background-color: #1b755c; /* Change background color on hover */
+  /* Optional: add a different color for the text if needed */
+}
+
+/*hero*/
+.hero-content{
+  background-color: #457b9d;
+  height: 30rem;
+
+}.owl {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 55rem;
+  height: 50;
+  /* Remove the animation property from here */
+}
+
+@keyframes owl {
+  0%   { transform: scale(0.5); }
+  20%  { transform: scale(1); }
+}
+
+.owl:hover {
+  animation-name: owl;
+  animation-duration: 4s; /* Slower animation on hover */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item1 {
+  width: 30rem;
+  height: 40rem;
+  padding: 10rem;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.item2 {
+  width: 30rem;
+  height: 40rem;
+  padding: 10rem;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.item3 {
+  width: 30rem;
+  height: 40rem;
+  padding: 10rem;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.item1 { background-color:  #9d5745; } /* Light gray background */
+.item2 { background-color: #2f4f4f; } /* Light blue background */
+.item3 { background-color: #739f7a; } /* Light pink background */
+
+
+/*footer*/
+.footer1{
+  width: 100rem;
+  height: 15rem;
+  padding: 10rem;
+  box-sizing: border-box;
+  background-color: #457b9d;
+  left: 0;
+  top: 0;
+}
+
+
+h2{
+  color: black;
+ 
+}
+
+
