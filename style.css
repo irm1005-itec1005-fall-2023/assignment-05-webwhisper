@@ -61,12 +61,12 @@ main {
   display: flex; /* Enable flexbox */
   justify-content: left; /* Center items horizontally */
   align-items: center; /* Center items vertically */
-  background-color: black; /* Background color of the navbar */
+  background-color: rgb(255, 255, 255); /* Background color of the navbar */
 }
 
 .nav-item {
   margin: 0.5; /* Spacing between nav items */
-  background-color: black; /* Background color of nav item containers */
+  background-color: rgb(255, 255, 255); /* Background color of nav item containers */
   padding: 10px; /* Padding inside nav item containers */
   width: 10rem;
   height: 3rem;
@@ -75,19 +75,24 @@ main {
 
 .nav-item a {
   text-decoration: none; /* Remove underline from links */
-  color: white; /* Text color for links */
+  color: rgb(0, 0, 0); /* Text color for links */
+  font-weight: bold; /* Bold font weight */
   
 }
 
 .nav-item:hover {
-  background-color: #1b755c; /* Change background color on hover */
+  background-color: #96dbc8; /* Change background color on hover */
   /* Optional: add a different color for the text if needed */
 }
 
 /*hero*/
 .hero-content{
-  background-color: #457b9d;
+  background-color: #9dd2f3;
   height: 30rem;
+  border-radius: 40px;
+  width: 90rem;
+  margin-left: 2rem;
+
 
 }.owl {
   position: absolute;
@@ -111,7 +116,8 @@ main {
 }
 
 h1 {
-  margin-left: 1rem;
+  margin-left: 2rem;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -120,49 +126,51 @@ h1 {
 }
 
 .item1 {
-  width: 30rem;
+  width: 25rem;
   height: 40rem;
   padding: 10rem;
-  border: 5px solid black;
-  box-sizing: border-box;
   margin-top: 9rem;
   margin-bottom: 9rem;
+  margin-right: 2rem;
+  border-radius: 40px;
 }
 
 .item2 {
-  width: 30rem;
+  width: 25rem;
   height: 40rem;
   padding: 10rem;
-  border: 5px solid black;
-  box-sizing: border-box;
   margin-top: 9rem;
   margin-bottom: 9rem;
+  margin-right: 2rem;
+  border-radius: 40px;
 }
 
 .item3 {
-  width: 30rem;
+  width: 25rem;
   height: 40rem;
   padding: 10rem;
-  border: 5px solid black;
-  box-sizing: border-box;
   margin-top: 9rem;
   margin-bottom: 9rem;
+  margin-right: 2rem;
+  border-radius: 40px;
 }
 
-.item1 { background-color:  #9d5745; } /* Light gray background */
-.item2 { background-color: #2f4f4f; } /* Light blue background */
-.item3 { background-color: #739f7a; } /* Light pink background */
+.item1 { background-color:  #3a4279; } /* Light gray background */
+.item2 { background-color: #5f9c9c; } /* Light blue background */
+.item3 { background-color: #63a16d; } /* Light pink background */
 
 
 /*footer*/
 .footer1{
-  width: 100rem;
+  width: 90rem;
   height: 15rem;
   padding: 10rem;
   box-sizing: border-box;
-  background-color: #457b9d;
-  left: 0;
+  background-color: #9dd2f3;
+  border-radius: 40px;
   top: 0;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 
