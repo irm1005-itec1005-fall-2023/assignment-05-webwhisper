@@ -120,8 +120,8 @@ h1 {
 }
 
 .item1 {
-  width: 30rem;
-  height: 40rem;
+  width: 40rem;
+  height: 45em;
   padding: 10rem;
   border: 5px solid black;
   box-sizing: border-box;
@@ -129,29 +129,8 @@ h1 {
   margin-bottom: 9rem;
 }
 
-.item2 {
-  width: 30rem;
-  height: 40rem;
-  padding: 10rem;
-  border: 5px solid black;
-  box-sizing: border-box;
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-}
+.item1 { background-color:   #457b9d; } /* Light gray background */
 
-.item3 {
-  width: 30rem;
-  height: 40rem;
-  padding: 10rem;
-  border: 5px solid black;
-  box-sizing: border-box;
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-}
-
-.item1 { background-color:  #9d5745; } /* Light gray background */
-.item2 { background-color: #2f4f4f; } /* Light blue background */
-.item3 { background-color: #739f7a; } /* Light pink background */
 
 
 /*footer*/
@@ -165,10 +144,87 @@ h1 {
   top: 0;
 }
 
+/*btn*/
 
-h2{
-  color: black;
- 
+.guess{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  transition: background-color 0.3s;
+  margin-right: 20px;
+  margin-left: 4px;
+  margin-top: 25px;
 }
 
+.guess:hover {
+  background-color: rgb(61, 3, 3); /* Background color changes to red on hover */
+  color: #ccc;
+}
+
+/*input*/
+.inp{
+  height: 3rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+  border: black;
+
+}
+
+
+/*footer*/
+.site-footer {
+  margin-top: -60px; 
+  color: #fff;
+  font-size: 14px;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-right: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    color: #fff;
+    
+}
+
+.footer-section ul,
+.footer-section p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    margin-top: 0px;
+   
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
 
