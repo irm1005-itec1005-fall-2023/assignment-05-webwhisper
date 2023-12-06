@@ -22,44 +22,51 @@
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
   </head>
-<header>
-  <nav class="navbar">
-    <div class="nav-item"><a href="#">Home</a></div>
-    <div class="nav-item"><a href="#">About</a></div>
-    <div class="nav-item"><a href="#">Contact</a></div>
-    <!-- More nav items here -->
-</nav>
-     <!-- Hero content -->
-     <div class="hero-content">
+
+
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="./images/keyboard.png" alt="keyboard" class="logo">
+
+      <div class="nav-item"><a href="#">Home</a></div>
+      <div class="nav-item"><a href="#">New</a></div>
+      <div class="nav-item"><a href="#">Trending</a></div>
+      <!-- More nav items here -->
+    </nav>
+
+       <!-- Hero content -->
+    <div class="hero-content">
       <img  class="owl" src="./images/favicon/owl2.png" alt="Description of image">
-      <h1 class="guess">Guess The Word</h1>
-  </div>
-</header>
+        <h1>Owl Games</h1>
+    </div>
+  </header>
 
-<main>
-    <!-- Main content goes here -->
+  <main>
+      <!-- Main content goes here -->
     <div class="container">
-    <div class="item1">..</div>
-    <div class="item2">..</div>
-    <div class="item3">..</div>
-  </div>
-</main>
+      <h1>Guess the word</h1>
+      <div id="word-display">Guess Word</div>
+      <div id="guesses-left"></div>
+      <input type="text" id="user-input" maxlength="'1">
+      <button onclick="guessLetter()">Guess</button>
+    </div>
+  </main>
 
-<footer>
-    <!-- Footer content goes here -->
-  
+  <footer>
+
+      <!-- Footer content goes here -->
     <div class="footer1">
       <div class="foot"><h2>Game Template</h2>
         <p id="wordToGuess"></p>
         <input type="text" id="guessInput" maxlength="1" placeholder="Enter a letter">
         <button id="guessButton">Guess</button>
         <p id="result"></p></div>
-    </div>
+    </div> 
+  </footer>
 
-  
-</footer>
-
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./script.js"></script>
+      <!-- This is where we add our awesome JavaScript code -->
+      <script src="./script.js"></script>
   </body>
 </html>
