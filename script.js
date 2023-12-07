@@ -47,5 +47,11 @@ function checkLetter() {
   document.getElementById('guessInput').value = '';
 }
 
+function restartGame() {
+  location.reload();
+}
+
 document.getElementById('guessButton').addEventListener('click', checkLetter);
+
+
 window.onload = createSquares;
