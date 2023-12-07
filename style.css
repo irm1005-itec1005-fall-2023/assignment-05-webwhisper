@@ -161,6 +161,26 @@ h1 {
 }
 
 /*btn*/
+.btn-refresh{
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 3px solid black;
+  box-shadow: 0 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 5.8rem;
+  margin-top: 20px;
+  
+}
+
+.btn-refresh:hover {
+  box-shadow: none;
+  background-color: rgb(71, 93, 255); /* Background color changes to red on hover */
+  transform: translateY(5px); /* Move down 5px on hover */
+
+}
 
 .btn-guess{
   text-decoration: none;
@@ -182,7 +202,6 @@ h1 {
   transform: translateY(5px); /* Move down 5px on hover */
 
 }
-
 
 .confetti-container {
   position: fixed;
@@ -281,10 +300,9 @@ h1 {
   width: 18rem;
   border-radius: 0.5rem;
   border: black;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 126, 6);
 
 }
-
 
 /*footer*/
 .site-footer {
@@ -380,6 +398,7 @@ h3{
   margin: 5px;
   display: inline-block;
   font-size: 30px;
+  align-items: center;
   text-align: center;
   line-height: 50px; /* Center text vertically */
 }
