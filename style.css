@@ -29,12 +29,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--body-default-colour);
   background-color: var(--body-background-colour);
-  background-color: #F2F2F2;
+  background-color: #ffffff;
 }
 
 main {
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,34 +58,45 @@ main {
 
 .navbar {
   display: flex; /* Enable flexbox */
-  justify-content: left; /* Center items horizontally */
+  width:100%;
+  justify-content: right; /* Center items horizontally */
   align-items: center; /* Center items vertically */
-  background-color: black; /* Background color of the navbar */
+  background-color: rgb(255, 255, 255); /* Background color of the navbar */
+  border-radius: 20px;
+  border: 3px solid black;
+  padding: 20px; 
+  margin: 0.5rem;
+
 }
 
+.logo {
+  margin-right: auto; /* Push logo to the left */
+  padding: 0.5rem; /* Add some padding */
+  width: 10rem;
+
+}
 .nav-item {
-  margin: 0.5; /* Spacing between nav items */
-  background-color: black; /* Background color of nav item containers */
+  background-color: transparent; /* Background color of nav item containers */
   padding: 10px; /* Padding inside nav item containers */
   width: 10rem;
   height: 3rem;
-
 }
 
 .nav-item a {
   text-decoration: none; /* Remove underline from links */
-  color: white; /* Text color for links */
+  color: rgb(0, 0, 0); /* Text color for links */
+  font-weight: bold; /* Bold font weight */
   
 }
 
 .nav-item:hover {
-  background-color: #1b755c; /* Change background color on hover */
-  /* Optional: add a different color for the text if needed */
+  text-decoration: underline; /* Add underline on hover */
+  color: rgb(0, 0, 0); /* Darken text color */
 }
 
 /*hero*/
 .hero-content{
-  background-color: #457b9d;
+  background-color: rgb(59, 96, 164);
   height: 30rem;
 
 }.owl {
@@ -111,7 +121,13 @@ main {
 }
 
 h1 {
-  margin-right: 4rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  padding: 30px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 3px 3px #ff5e00;
+  font-size: 6rem;
 }
 
 .container {
@@ -124,15 +140,14 @@ h1 {
   width: 40rem;
   height: 45em;
   padding: 10rem;
-  border: 5px solid black;
+  border: 4px solid black;
+  border-radius: 30px;
   box-sizing: border-box;
   margin-top: 9rem;
   margin-bottom: 9rem;
 }
 
-.item1 { background-color:   #457b9d; } /* Light gray background */
-
-
+.item1 { background-color:   #79acf2; } /* Light gray background */
 
 /*footer*/
 .footer1{
@@ -140,7 +155,7 @@ h1 {
   height: 15rem;
   padding: 10rem;
   box-sizing: border-box;
-  background-color: #457b9d;
+  background-color: rgb(59, 96, 164);
   left: 0;
   top: 0;
 }
@@ -149,10 +164,12 @@ h1 {
 
 .guess{
   text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  color: #333;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 3px solid black;
+  box-shadow: 0 5px rgba(0,0,0,0.2);
   transition: background-color 0.3s;
+  cursor: pointer;
   margin-right: 20px;
   margin-left: 6rem;
   margin-top: 30px;
@@ -160,8 +177,10 @@ h1 {
 }
 
 .guess:hover {
-  background-color: rgb(61, 3, 3); /* Background color changes to red on hover */
-  color: #ccc;
+  box-shadow: none;
+  background-color: rgb(71, 93, 255); /* Background color changes to red on hover */
+  transform: translateY(5px); /* Move down 5px on hover */
+
 }
 
 /*input*/
@@ -261,9 +280,6 @@ h3{
     transform: translateY(0);
   }
 }
-
-
-
 
 .square {
   width: 50px;
