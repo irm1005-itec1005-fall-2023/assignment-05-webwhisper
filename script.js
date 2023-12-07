@@ -14,8 +14,18 @@ const headingText = "Develop. Preview. Ship.";
 const headingTextIcon = "🚀";
 const projectDueDate = "8 December 2023 11:59";
 
+const words = ["apple", "banana", "cherry", "durian", "eggplant", "fig", "grape", "honeydew", "kiwi", "lemon", "mango", "orange", "pear","raspberry", "strawberry", "tangerine", "watermelon"];
+
 // Variables
 let countdownDate = new Date(projectDueDate);
+
+let randomWord = words[Math.floor(Math.random() * words.length)];
+let wordLength = randomWord.length;
+let guessCount = 0;
+
+//store the word in an array
+let guessedWords = [];
+
 
 // DOM Elements
 let appContainer = document.getElementById(appID);
@@ -43,6 +53,8 @@ function calculateDaysLeft(countdownDate) {
 
   return days;
 }
+
+
 
 // Add a heading to the app container
 function inititialise() {
