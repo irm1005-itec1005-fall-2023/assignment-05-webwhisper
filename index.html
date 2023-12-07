@@ -43,20 +43,30 @@
     </header>
 
     <main>
+
+      <div class="confetti-container" id="confetti" onclick="triggerConfetti()">
+        <div class="confetti1"></div>
+        <div class="confetti2"></div>
+        <div class="confetti3"></div>
+        <div class="confetti4"></div>
+        <div class="confetti5"></div>
+        <div class="confetti5"></div>
+        
+      </div>
       <div class="container">
         <div class="item1">
           <h2>Guess the word game</h2>
           <h3>Topic: Animals</h3>
-          <p id="wordToGuess" class="word-to-guess"></p>
-          <div id="wordContainer" class="word-container"></div>
-            <!-- Container for dynamic squares -->
-          <input class="inp" type="text" id="guessInput" placeholder="Enter a letter" maxlength="1">           
-          <button class="btn guess" id="guessButton">Guess</button>
+          <div id="wordContainer" class="word-container"></div> <!-- This ID should match the one in createSquares function -->
+          <input class="inp" type="text" id="guessInput" placeholder="Enter a letter" maxlength="1"> <!-- This ID should match the one in checkLetter function -->
+          <button class="btn-guess" id="guessButton">Guess</button>
+          <button class="btn-Refresh" id="guessButton">Refresh</button>
           <p id="result" class="result"></p>
-          <img  class="movingimg" src="./images/favicon/owllll-removebg-preview.png" alt="funimg">
+          <img class="movingimg" src="./images/favicon/owllll-removebg-preview.png" alt="funimg">
         </div>
       </div>
     </main>
+
 
 
     <footer>

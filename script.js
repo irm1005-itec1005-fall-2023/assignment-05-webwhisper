@@ -3,12 +3,20 @@
 /*just testing it*/
 // Array of words to choose from
 const words = ["dog", "cat", "cow", "bird"];
-let selectedWord = words[Math.floor(Math.random() * words.length)].toUpperCase(); // Randomly select a word and convert to uppercase
+let selectedWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
 
-// Function to create squares
+function triggerConfetti() {
+  const confetti = document.getElementById('confetti');
+  confetti.style.display = 'block';
+
+  setTimeout(function() {
+      confetti.style.display = 'none';
+  }, 3000);
+}
+
 function createSquares() {
-  const wordContainer = document.getElementById('wordContainer');
-  wordContainer.innerHTML = ''; // Clear previous squares
+  const wordContainer = document.getElementById('wordContainer'); 
+  wordContainer.innerHTML = '';
 
   for (let i = 0; i < selectedWord.length; i++) {
     let square = document.createElement('div');
@@ -18,7 +26,6 @@ function createSquares() {
   }
 }
 
-// Function to check if the entered letter is correct
 function checkLetter() {
   let input = document.getElementById('guessInput').value.toUpperCase();
   let letterFound = false;
@@ -27,18 +34,18 @@ function checkLetter() {
     if (selectedWord[i] === input) {
       document.getElementById('square' + i).textContent = input;
       letterFound = true;
+      triggerConfetti();
     }
   }
 
-  if (!letterFound && input) {
+  if (letterFound) {
+    triggerConfetti();
+  } else if (input) {
     alert("Sorry, please try again");
   }
 
   document.getElementById('guessInput').value = '';
 }
 
-// Event listener for the guess button
 document.getElementById('guessButton').addEventListener('click', checkLetter);
-
-// Initialize the squares when the window loads
 window.onload = createSquares;

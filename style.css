@@ -162,7 +162,7 @@ h1 {
 
 /*btn*/
 
-.guess{
+.btn-guess{
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -176,13 +176,105 @@ h1 {
   
 }
 
-.guess:hover {
+.btn-guess:hover {
   box-shadow: none;
   background-color: rgb(71, 93, 255); /* Background color changes to red on hover */
   transform: translateY(5px); /* Move down 5px on hover */
 
 }
 
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  z-index: 9999;
+}
+
+.confetti1 {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: #ff0000;
+  animation: fall 3s linear infinite;
+}
+
+
+@keyframes fall {
+  0% { top: -10px; left: calc(50% - 5px); opacity: 1; }
+  100% { top: 100%; left: calc(50% - 5px); opacity: 0; }
+}
+
+.confetti2 {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: #1d3557;
+  animation: fall2 4s linear infinite;
+}
+
+  @keyframes fall2 {
+    0% { top: -10px; left: calc(50% - 5px); opacity: 1; }
+    100% { top: 100%; left: calc(50% - 5px); opacity: 0; }
+  }
+
+
+
+  .confetti3 {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: orange;
+    animation: fall3 3s linear infinite;
+  }
+  @keyframes fall3 {
+    0% { top: -50px; left: calc(50% - 50px); opacity: 1; }
+    100% { top: 100%; left: calc(50% - 50px); opacity: 0; }
+  }
+
+  
+  .confetti4 {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: #1d3557;
+    animation: fall4 3s linear infinite;
+  }
+  @keyframes fall4 {
+    0% { top: -50px; left: calc(45% - 50px); opacity: 1; }
+    100% { top: 100%; left: calc(45% - 50px); opacity: 0; }
+  }
+
+
+  
+  .confetti5 {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: orange;
+    animation: fall5 4s linear infinite;
+  }
+  @keyframes fall5 {
+    0% { top: 50px; left: calc(45% - 5px); opacity: 1; }
+    100% { top: 100%; left: calc(45% - 5px); opacity: 0; }
+  }
+
+  
+  .confetti6 {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: #1d3557;
+    animation: fall6 3s linear infinite;
+  }
+  @keyframes fall6 {
+    0% { top: 50px; left: calc(65% - 50px); opacity: 1; }
+    100% { top: 100%; left: calc(65% - 50px); opacity: 0; }
+  }
 /*input*/
 .inp{
   height: 3rem;
