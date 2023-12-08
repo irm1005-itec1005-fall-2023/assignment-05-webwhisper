@@ -161,6 +161,32 @@ h1 {
 }
 
 /*btn*/
+
+.category-buttons {
+  justify-content: center;
+  align-items: center;
+}
+
+.category-buttons button {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid black;
+  box-shadow: 0 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 5.8rem;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.category-buttons button:hover {
+  box-shadow: none;
+  background-color: rgb(71, 93, 255); /* Background color changes to red on hover */
+  transform: translateY(5px); /* Move down 5px on hover */
+}
+
 .btn-refresh{
   text-decoration: none;
   padding: 1rem 2rem;
