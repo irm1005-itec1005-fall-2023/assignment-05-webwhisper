@@ -2,8 +2,8 @@
 /*just testing it*/
 /*just testing it*/
 // Array of words to choose from
-const category1Words = ["dog", "cat", "cow", "bird"];
-const category2Words = ["green", "yellow", "orange", "blue"];
+const category1Words = ["dog", "cat", "cow", "bird", "horse", "pig", "goat", "chicken","bear"];
+const category2Words = ["green", "yellow", "orange", "blue", "red", "pink", "purple", "black", "white", "brown"];
 let selectedCategory = 0;
 let selectedWord = "";
 
