@@ -2,8 +2,22 @@
 /*just testing it*/
 /*just testing it*/
 // Array of words to choose from
-const words = ["dog", "cat", "cow", "bird"];
-let selectedWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
+const category1Words = ["dog", "cat", "cow", "bird"];
+const category2Words = ["green", "yellow", "orange", "blue"];
+let selectedCategory = 0;
+let selectedWord = "";
+
+
+function selectCategory(category) {
+  selectedCategory = category;
+  if (category == 1) {
+     selectedWord = category1Words[Math.floor(Math.random() * category1Words.length)].toUpperCase();
+  } else if (category == 2) {
+      selectedWord = category2Words[Math.floor(Math.random() * category2Words.length)].toUpperCase();
+  }
+  createSquares();
+}
+
 
 function triggerConfetti() {
   const confetti = document.getElementById('confetti');
