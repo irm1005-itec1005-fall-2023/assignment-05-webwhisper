@@ -61,11 +61,26 @@ function checkLetter() {
   document.getElementById('guessInput').value = '';
 }
 
+document.getElementById('guessButton').addEventListener('click', checkLetter);
+
 function restartGame() {
+  const audio = document.getElementById('background-music');
+  audio.onpause(); //pause the audio before reloading
   location.reload();
 }
+function playmusic() {
+  const audio = document.getElementById('background-music');
+  audio.addEventListener('canplaythrough', function () {
+    audio.loop = true;
+    audio.play();
+  });
+}
 
-document.getElementById('guessButton').addEventListener('click', checkLetter);
+document.addEventListener('DOMContentLoaded', function () {
+  playMusic();
+  createSquares ();
+});
+
 
 
 window.onload = createSquares;
