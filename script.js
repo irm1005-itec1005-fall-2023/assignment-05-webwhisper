@@ -65,10 +65,10 @@ document.getElementById('guessButton').addEventListener('click', checkLetter);
 
 function restartGame() {
   const audio = document.getElementById('background-music');
-  audio.onpause(); //pause the audio before reloading
+  audio.pause(); //pause the audio before reloading
   location.reload();
 }
-function playmusic() {
+function playMusic() {
   const audio = document.getElementById('background-music');
   audio.addEventListener('canplaythrough', function () {
     audio.loop = true;
